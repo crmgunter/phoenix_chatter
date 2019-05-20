@@ -36,7 +36,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :chatter, Chatter.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
+  username: "camerongunter",
   password: "postgres",
   database: "chatter_dev",
   hostname: "localhost",
