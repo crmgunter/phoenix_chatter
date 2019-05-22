@@ -4,6 +4,7 @@ defmodule Chatter.User do
   schema "users" do
     field :email, :string
     field :encrypt_pass, :string
+    field :password, :string, virtual: true
 
     timestamps()
   end
@@ -13,8 +14,8 @@ defmodule Chatter.User do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:email, :encrypt_pass])
-    |> validate_required([:email, :encrypt_pass])
+    |> cast(params, [:email, :password])
+    |> validate_required([:email, :password])
     |> unique_constraint(:email)
   end
 end

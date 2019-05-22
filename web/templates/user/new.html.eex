@@ -1,0 +1,5 @@
+<form>
+    <input type="text" placeholder="shit">
+    <input type="text" placeholder="shit">
+    <button>submit</button>
+</form>
