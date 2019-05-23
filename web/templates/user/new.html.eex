@@ -1,5 +1,5 @@
-<form>
-    <input type="text" placeholder="shit">
-    <input type="text" placeholder="shit">
-    <button>submit</button>
-</form>
+<h2>Create a new User</h2>
+
+<%= render "form.html", changeset: @changeset, action: user_path(@conn, :create) %>
+
+<%= link "Back", to: user_path(@conn, :index) %>
